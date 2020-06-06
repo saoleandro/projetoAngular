@@ -1,0 +1,72 @@
+.tooltip-inner {
+    padding: 8px;
+    background-color: rgba(0,0,0, .85);
+    text-align: left;
+}
+
+.tooltip-inner p {
+    margin-bottom: 0;
+}
+
+.-status-tooltip .tooltip-inner {
+    min-width: 280px;
+}
+
+.-irop-tooltip .tooltip-inner {
+    width: auto;
+    max-width: inherit;
+    min-width: 220px;
+}
+
+.-status-tooltip .tooltip-inner p {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: left;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.-ssr-tooltip .tooltip-inner p {
+    line-height: 24px;
+    margin-bottom: 8px;
+    padding-left: 32px;
+    position: relative;
+}
+
+.-ssr-tooltip .tooltip-inner p:last-child {
+    margin-bottom: 0;
+}
+
+.-total-circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.-total-circle span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    font-size: 14px !important;
+    font-weight: bold;
+    font-family: "Roboto Regular";
+}
+
+
+.tooltip > div {
+    animation-name: delayedFadeIn;
+    animation-duration: .3s;
+}
+
+@Keyframes delayedFadeIn {
+    0% { opacity: 0; }
+    75% { opacity: 0; }
+    100% { opacity: 1; }
+}

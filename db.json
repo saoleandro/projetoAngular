@@ -1,0 +1,21 @@
+{
+  "authors": [
+    {
+      "id": 1,
+      "name": "joão silva"
+    },
+    {
+      "id": 2,
+      "name": "paulo coelho"
+    },
+    {
+      "id": 3,
+      "name": "celso de araujo"
+    }
+  ],
+  "authentication": {
+    "name": "Administrador",
+    "username": "leandro.leandro",
+    "token": "abcadfasdfdasfdafsda1231165466546464"
+  }
+}

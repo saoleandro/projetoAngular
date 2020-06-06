@@ -1,0 +1,50 @@
+<style>
+    #basic-btn tr td{
+    white-space: pre-wrap;
+}
+</style>
+<div class="content" id="page-wrap">
+    <div id="caixaGrid" class="caixa">
+        <div class="caixa-cabecalho">
+            <div class="caixa-cabecalho-titulo">Autores
+            </div>
+            <div class="caixa-cabecalho-acao">
+                <table>
+                    <thead>
+                     <tr>
+                        <th colspan="2">Nome:</th>                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type=text [(ngModel)]="name"> </td>
+                        <td><input type="button" (click)="save()" value="gravar"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="clearfix"></div>
+         </div>
+<br/>
+<br/>
+<br/>
+        <div class="caixa-conteudo" style="min-height: 570px;">
+            <div class="table-responsive">
+                <table #myDiv id="gridAuthor" class="row-border hover" style="width: 100%;table-layout:fixed">
+                <thead>
+                    <tr>
+                        <th width="10%">#</th>
+                        <th>Nome</th>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let author of authors">
+                        <td>{{author.id}}</td>
+                        <td>{{author.name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+ </div>
+</div>
